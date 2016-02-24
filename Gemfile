@@ -47,3 +47,4 @@ end
 
 gem 'bootstrap-generators', '~> 3.3.4'
 gem 'devise'
+gem 'rack-cors', :require => 'rack/cors'
