@@ -1,4 +1,6 @@
 class RsvpsController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: :create
+  skip_before_action :authenticate_user!, only: :create
   before_action :set_rsvp, only: [:show, :edit, :update, :destroy]
 
   # GET /rsvps
@@ -24,9 +26,6 @@ class RsvpsController < ApplicationController
   # POST /rsvps
   # POST /rsvps.json
   def create
-
-    skip_before_action :verify_authenticity_token
-
     @rsvp = Rsvp.new(rsvp_params)
 
     respond_to do |format|
