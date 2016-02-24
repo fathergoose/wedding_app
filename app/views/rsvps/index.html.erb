@@ -2,11 +2,11 @@
 
 <h1>Listing Rsvps</h1>
 
-<%= form_tag rsvps_path, :method => 'get' do %>
-  <p>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search", :name => nil %>
-  </p>
+<%= form_tag rsvps_path, :method => 'get', :class => 'form-inline' do%>
+  <div class="form-group">
+    <%= text_field_tag :search, params[:search], :class => "form-control" %>
+    <%= button_tag "Search", :name => nil, :class => "btn btn-success" %>
+  </div>
 <% end %>
 
 <table class="table">
