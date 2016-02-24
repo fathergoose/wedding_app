@@ -30,9 +30,11 @@ class RsvpsController < ApplicationController
 
     respond_to do |format|
       if @rsvp.save
+        puts "if was true"
         format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
         format.json { render :show, status: :created, location: @rsvp }
       else
+        puts "it was else"
         format.html { render :new }
         format.json { render json: @rsvp.errors, status: :unprocessable_entity }
       end
