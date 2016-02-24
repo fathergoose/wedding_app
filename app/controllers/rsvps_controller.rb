@@ -6,7 +6,7 @@ class RsvpsController < ApplicationController
   # GET /rsvps
   # GET /rsvps.json
   def index
-    @rsvps = Rsvp.all
+    @rsvps = Rsvp.search(params[:search])
   end
 
   # GET /rsvps/1
