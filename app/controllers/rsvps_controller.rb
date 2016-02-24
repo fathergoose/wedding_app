@@ -24,6 +24,9 @@ class RsvpsController < ApplicationController
   # POST /rsvps
   # POST /rsvps.json
   def create
+
+    skip_before_action :verify_authenticity_token
+
     @rsvp = Rsvp.new(rsvp_params)
 
     respond_to do |format|
