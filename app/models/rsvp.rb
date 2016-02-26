@@ -6,4 +6,8 @@ class Rsvp < ActiveRecord::Base
       Rsvp.all
     end
   end
+
+  def comment_preveiw
+    comment[0..50].gsub(/\s\w+\s*$/,'...')
+  end
 end
