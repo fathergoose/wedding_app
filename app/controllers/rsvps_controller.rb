@@ -28,17 +28,19 @@ class RsvpsController < ApplicationController
   def create
     @rsvp = Rsvp.new(rsvp_params)
 
-    respond_to do |format|
+    # respond_to do |format|
       if @rsvp.save
         puts "if was true"
-        format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
-        format.json { render :show, status: :created, location: @rsvp }
+        # format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
+        # format.json { render :show, status: :created, location: @rsvp }
+        render plain: "Thank you for the RSVP"
       else
         puts "it was else"
-        format.html { render :new }
-        format.json { render json: @rsvp.errors, status: :unprocessable_entity }
+        # format.html { render :new }
+        # format.json { render json: @rsvp.errors, status: :unprocessable_entity }
+        render plain: "An error has occurred, please contact al@ilseman.com"
       end
-    end
+    # end
   end
 
   # PATCH/PUT /rsvps/1
@@ -73,6 +75,6 @@ class RsvpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:guest, :plusone, :email, :comment)
+      params.permit(:guest, :email, :comment)
     end
 end
