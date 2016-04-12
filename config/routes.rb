@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :guests
   devise_for :users
   resources :rsvps
   root 'rsvps#index'
