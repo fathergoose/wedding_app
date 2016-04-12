@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224175728) do
+ActiveRecord::Schema.define(version: 20160412211522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "rsvps", force: :cascade do |t|
-    t.string   "guest"
-    t.string   "plusone"
     t.string   "email"
     t.text     "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "guest_id"
+    t.boolean  "attending"
   end
 
   create_table "users", force: :cascade do |t|
