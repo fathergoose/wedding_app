@@ -5,9 +5,9 @@ class RsvpMailer < ApplicationMailer
   #
   #   en.rsvp_mailer.confirm.subject
   #
-  def confirm
-    @greeting = "Hi"
+  def confirm(rsvp)
+    @rsvp = rsvp
 
-    mail to: "to@example.org"
+    mail to: rsvp.email
   end
 end

@@ -28,20 +28,15 @@ class RsvpsController < ApplicationController
   def create
     @rsvp = Rsvp.new(rsvp_params)
 
-    # respond_to do |format|
       if @rsvp.save
         puts "if was true"
         @rsvp.mark_guest
-        # format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
-        # format.json { render :show, status: :created, location: @rsvp }
+        RsvpMailer.confirm(@rsvp).deliver
         render plain: "Thank you for the RSVP"
       else
         puts "it was else"
-        # format.html { render :new }
-        # format.json { render json: @rsvp.errors, status: :unprocessable_entity }
         render plain: "An error has occurred, please contact al@ilseman.com"
       end
-    # end
   end
 
   # PATCH/PUT /rsvps/1

@@ -1,5 +1,14 @@
-<h1>RsvpMailer#confirm</h1>
+<h1>You are confirmed</h1>
+
+<h3>Dear <%= @rsvp.first_name %>,</h3>
 
 <p>
-  <%= @greeting %>, find me in app/views/rsvp_mailer/confirm.html.erb
+  <% if @rsvp.attending %>
+    Thank you for the RSVP! We look forward to sharing our special day with you. If you have any questions about the event, be sure to check out website at marzenilsemanwedding.com, or email us at info@marzenilsemanwedding.com.
+  <% else %>
+    Thank your for the RSVP. We will miss having you at the wedding, but hope to see you soon!
+  <% end %>
 </p>
+
+<p>Love,</p>
+<p>Mel &amp; Al</p>
