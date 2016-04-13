@@ -11,4 +11,9 @@ class InvitationMailer < ApplicationMailer
     mail(to: guest.email,
          subject: "We're getting married!" )
   end
+
+  def invite_with_plusone(guest)
+  end
+
+
 end
