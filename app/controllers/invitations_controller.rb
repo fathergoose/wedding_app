@@ -1,6 +1,12 @@
 class InvitationsController < ApplicationController
   before_action :set_invitation, only: [:show, :edit, :update, :destroy]
 
+  def send_all
+    @guests = Guest.all
+    Invitation.invite_all(@guests)
+  end
+
+
   # GET /invitations
   # GET /invitations.json
   def index

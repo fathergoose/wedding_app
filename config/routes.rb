@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'invitations/send_all' => 'invitations#send_all'
   resources :groups
   resources :invitations
   resources :guests
