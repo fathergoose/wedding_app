@@ -8,6 +8,7 @@ class RsvpMailer < ApplicationMailer
   def confirm(rsvp)
     @rsvp = rsvp
 
-    mail to: rsvp.email
+    mail(to: rsvp.email,
+         subject: "You are confirmed")
   end
 end
