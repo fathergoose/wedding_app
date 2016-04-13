@@ -21,7 +21,7 @@
     <tbody>
       <%= content_tag_for(:tr, @invitations) do |invitation| %>
             <td><%= invitation.has_plus_one %></td>
-            <td><%= invitation.guest.first_name %></td>
+            <td><%= invitation.guest.full_name %></td>
             <td><%= link_to 'Show', invitation %></td>
         <td><%= link_to 'Edit', edit_invitation_path(invitation) %></td>
         <td><%= link_to 'Destroy', invitation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
