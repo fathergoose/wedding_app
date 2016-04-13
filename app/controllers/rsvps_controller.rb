@@ -31,6 +31,7 @@ class RsvpsController < ApplicationController
     # respond_to do |format|
       if @rsvp.save
         puts "if was true"
+        @rsvp.mark_guest
         # format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
         # format.json { render :show, status: :created, location: @rsvp }
         render plain: "Thank you for the RSVP"
@@ -75,6 +76,6 @@ class RsvpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.permit(:guest, :email, :comment)
+      params.permit(:first_name, :last_name, :email, :comment, :attending)
     end
 end

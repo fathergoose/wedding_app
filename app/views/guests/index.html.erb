@@ -15,6 +15,7 @@
             <th>Email</th>
             <th>Has Plusone</th>
             <th>Groups</th>
+            <th>RSVP</th>
             <th></th>
         <th></th>
         <th></th>
@@ -32,6 +33,13 @@
                 <%= group.name %>
               <% end %>
             </td>
+            <% if guest.rsvp == 'no response'%>
+              <td class="active"><i class="fa fa-spinner"></i></td>
+            <% elsif guest.rsvp == 'attending' %>
+              <td class="success"><i class="fa fa-thumbs-o-up"></i></td>
+            <% else %>
+              <td class="danger"><i class="fa fa-thumbs-o-down"></i></td>
+            <% end %>
             <td><%= link_to 'Show', guest %></td>
         <td><%= link_to 'Edit', edit_guest_path(guest) %></td>
         <td><%= link_to 'Destroy', guest, method: :delete, data: { confirm: 'Are you sure?' } %></td>

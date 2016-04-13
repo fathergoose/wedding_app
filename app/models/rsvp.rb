@@ -11,4 +11,26 @@ class Rsvp < ActiveRecord::Base
   def comment_preveiw
     comment[0..50].gsub(/\s\w+\s*$/,'...')
   end
+
+  def mark_guest
+
+    # Convert boolean to string
+    is_attending = attending ? 'attending' : 'not attending'
+    puts(is_attending)
+    puts(attending)
+
+    if @guest = Guest.find_by(email: email)
+      # Mark guest as having rsvpd
+       @guest.update rsvp: is_attending
+    else
+      # Or create new guest
+      @guest = Guest.new email: email,
+                         first_name: first_name, 
+                         last_name: last_name,
+                         rsvp: is_attending
+      @guest.save
+    end
+
+  end
+
 end
