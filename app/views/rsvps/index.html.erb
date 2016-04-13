@@ -12,21 +12,23 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Guest</th>
-      <th>Plusone</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
       <th>Email</th>
       <th>Comment</th>
-      <th colspan="3"></th>
+      <th>Attending?</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @rsvps.each do |rsvp| %>
       <tr>
-        <td><%= rsvp.guest %></td>
-        <td><%= rsvp.plusone %></td>
+        <td><%= rsvp.first_name %></td>
+        <td><%= rsvp.last_name %></td>
         <td><%= rsvp.email %></td>
         <td><%= rsvp.comment %></td>
+        <td><%= rsvp.attending %></td>
         <td><%= link_to 'Show', rsvp %></td>
         <td><%= link_to 'Edit', edit_rsvp_path(rsvp) %></td>
         <td><%= link_to 'Destroy', rsvp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
