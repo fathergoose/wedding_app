@@ -13,6 +13,8 @@
             <th>First name</th>
             <th>Last name</th>
             <th>Email</th>
+            <th>Has Plusone</th>
+            <th>Groups</th>
             <th></th>
         <th></th>
         <th></th>
@@ -24,6 +26,12 @@
             <td><%= guest.first_name %></td>
             <td><%= guest.last_name %></td>
             <td><%= guest.email %></td>
+            <td><%= guest.has_plus_one %></td>
+            <td>
+              <% guest.groups.each do |group| %>
+                <%= group.name %>
+              <% end %>
+            </td>
             <td><%= link_to 'Show', guest %></td>
         <td><%= link_to 'Edit', edit_guest_path(guest) %></td>
         <td><%= link_to 'Destroy', guest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
