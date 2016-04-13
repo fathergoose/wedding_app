@@ -1,0 +1,31 @@
+<div class="page-header">
+  <%= link_to new_invitation_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Invitation
+  <% end %>
+  <h1>Listing invitations</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Has plus one</th>
+            <th>Guest</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @invitations) do |invitation| %>
+            <td><%= invitation.has_plus_one %></td>
+            <td><%= invitation.guest_id %></td>
+            <td><%= link_to 'Show', invitation %></td>
+        <td><%= link_to 'Edit', edit_invitation_path(invitation) %></td>
+        <td><%= link_to 'Destroy', invitation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
