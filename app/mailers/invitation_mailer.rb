@@ -1,6 +1,6 @@
 class InvitationMailer < ApplicationMailer
 
-  subject: "We're getting married!"
+  default subject: "We're getting married!"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
