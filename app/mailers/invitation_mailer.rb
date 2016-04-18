@@ -13,7 +13,8 @@ class InvitationMailer < ApplicationMailer
 
     guests.each do |guest|
       emails << guest.email
-      names << guest.first_name
+      guest_hash = {"name": guest.first_name}
+      names << guest_hash
     end
 
     mail(to: emails)
@@ -28,7 +29,8 @@ class InvitationMailer < ApplicationMailer
 
     guests.each do |guest|
       emails << guest.email
-      names << guest.first_name
+      guest_hash = {"name": guest.first_name}
+      names << guest_hash
     end
 
     mail(to: emails)
