@@ -88,9 +88,9 @@ index	app/controllers/guests_controller.rb	/^  def index$/;"	f	class:GuestsContr
 index	app/controllers/invitations_controller.rb	/^  def index$/;"	f	class:InvitationsController
 index	app/controllers/rsvps_controller.rb	/^  def index$/;"	f	class:RsvpsController
 invitation_params	app/controllers/invitations_controller.rb	/^    def invitation_params$/;"	f	class:InvitationsController
-invite	app/mailers/invitation_mailer.rb	/^  def invite(guest)$/;"	f	class:InvitationMailer
 invite	test/mailers/previews/invitation_mailer_preview.rb	/^  def invite$/;"	f	class:InvitationMailerPreview
 invite_all	app/models/invitation.rb	/^  def self.invite_all(guests)$/;"	F	class:Invitation
+invite_single	app/mailers/invitation_mailer.rb	/^  def invite_single(guest)$/;"	f	class:InvitationMailer
 invite_with_plusone	app/mailers/invitation_mailer.rb	/^  def invite_with_plusone(guest)$/;"	f	class:InvitationMailer
 mark_guest	app/models/rsvp.rb	/^  def mark_guest$/;"	f	class:Rsvp
 new	app/controllers/groups_controller.rb	/^  def new$/;"	f	class:GroupsController

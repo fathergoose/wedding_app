@@ -5,7 +5,7 @@ class InvitationMailer < ApplicationMailer
   #
   #   en.invitation_mailer.invite.subject
   #
-  def invite(guest)
+  def invite_single(guest)
     @guest = guest
 
     mail(to: guest.email,
