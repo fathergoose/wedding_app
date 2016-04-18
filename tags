@@ -1,0 +1,115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddGuestIdToRsvps	db/migrate/20160412211522_add_guest_id_to_rsvps.rb	/^class AddGuestIdToRsvps < ActiveRecord::Migration$/;"	c
+AddHasPlusoneToGuests	db/migrate/20160413012355_add_has_plusone_to_guests.rb	/^class AddHasPlusoneToGuests < ActiveRecord::Migration$/;"	c
+AddNamesToRsvp	db/migrate/20160412211839_add_names_to_rsvp.rb	/^class AddNamesToRsvp < ActiveRecord::Migration$/;"	c
+AddRsvpToGuest	db/migrate/20160413025032_add_rsvp_to_guest.rb	/^class AddRsvpToGuest < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:WeddingApp
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+CreateGroupedGuests	db/migrate/20160413004909_create_grouped_guests.rb	/^class CreateGroupedGuests < ActiveRecord::Migration$/;"	c
+CreateGroups	db/migrate/20160413001906_create_groups.rb	/^class CreateGroups < ActiveRecord::Migration$/;"	c
+CreateGuests	db/migrate/20160412221537_create_guests.rb	/^class CreateGuests < ActiveRecord::Migration$/;"	c
+CreateInvitations	db/migrate/20160413001415_create_invitations.rb	/^class CreateInvitations < ActiveRecord::Migration$/;"	c
+CreateRsvps	db/migrate/20160223033929_create_rsvps.rb	/^class CreateRsvps < ActiveRecord::Migration$/;"	c
+DeviseCreateUsers	db/migrate/20160224175728_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
+Group	app/models/group.rb	/^class Group < ActiveRecord::Base$/;"	c
+GroupTest	test/models/group_test.rb	/^class GroupTest < ActiveSupport::TestCase$/;"	c
+GroupedGuest	app/models/grouped_guest.rb	/^class GroupedGuest < ActiveRecord::Base$/;"	c
+GroupedGuestTest	test/models/grouped_guest_test.rb	/^class GroupedGuestTest < ActiveSupport::TestCase$/;"	c
+GroupsController	app/controllers/groups_controller.rb	/^class GroupsController < ApplicationController$/;"	c
+GroupsControllerTest	test/controllers/groups_controller_test.rb	/^class GroupsControllerTest < ActionController::TestCase$/;"	c
+GroupsHelper	app/helpers/groups_helper.rb	/^module GroupsHelper$/;"	m
+Guest	app/models/guest.rb	/^class Guest < ActiveRecord::Base$/;"	c
+GuestTest	test/models/guest_test.rb	/^class GuestTest < ActiveSupport::TestCase$/;"	c
+GuestsController	app/controllers/guests_controller.rb	/^class GuestsController < ApplicationController$/;"	c
+GuestsControllerTest	test/controllers/guests_controller_test.rb	/^class GuestsControllerTest < ActionController::TestCase$/;"	c
+GuestsHelper	app/helpers/guests_helper.rb	/^module GuestsHelper$/;"	m
+Invitation	app/models/invitation.rb	/^class Invitation < ActiveRecord::Base$/;"	c
+InvitationMailer	app/mailers/invitation_mailer.rb	/^class InvitationMailer < ApplicationMailer$/;"	c
+InvitationMailerPreview	test/mailers/previews/invitation_mailer_preview.rb	/^class InvitationMailerPreview < ActionMailer::Preview$/;"	c
+InvitationMailerTest	test/mailers/invitation_mailer_test.rb	/^class InvitationMailerTest < ActionMailer::TestCase$/;"	c
+InvitationTest	test/models/invitation_test.rb	/^class InvitationTest < ActiveSupport::TestCase$/;"	c
+InvitationsController	app/controllers/invitations_controller.rb	/^class InvitationsController < ApplicationController$/;"	c
+InvitationsControllerTest	test/controllers/invitations_controller_test.rb	/^class InvitationsControllerTest < ActionController::TestCase$/;"	c
+InvitationsHelper	app/helpers/invitations_helper.rb	/^module InvitationsHelper$/;"	m
+PagesController	app/controllers/pages_controller.rb	/^class PagesController < ApplicationController$/;"	c
+PagesControllerTest	test/controllers/pages_controller_test.rb	/^class PagesControllerTest < ActionController::TestCase$/;"	c
+PagesHelper	app/helpers/pages_helper.rb	/^module PagesHelper$/;"	m
+RemoveGuestFromRsvps	db/migrate/20160412211108_remove_guest_from_rsvps.rb	/^class RemoveGuestFromRsvps < ActiveRecord::Migration$/;"	c
+Rsvp	app/models/rsvp.rb	/^class Rsvp < ActiveRecord::Base$/;"	c
+RsvpMailer	app/mailers/rsvp_mailer.rb	/^class RsvpMailer < ApplicationMailer$/;"	c
+RsvpMailerPreview	test/mailers/previews/rsvp_mailer_preview.rb	/^class RsvpMailerPreview < ActionMailer::Preview$/;"	c
+RsvpMailerTest	test/mailers/rsvp_mailer_test.rb	/^class RsvpMailerTest < ActionMailer::TestCase$/;"	c
+RsvpTest	test/models/rsvp_test.rb	/^class RsvpTest < ActiveSupport::TestCase$/;"	c
+RsvpsController	app/controllers/rsvps_controller.rb	/^class RsvpsController < ApplicationController$/;"	c
+RsvpsControllerTest	test/controllers/rsvps_controller_test.rb	/^class RsvpsControllerTest < ActionController::TestCase$/;"	c
+RsvpsHelper	app/helpers/rsvps_helper.rb	/^module RsvpsHelper$/;"	m
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+WeddingApp	config/application.rb	/^module WeddingApp$/;"	m
+change	db/migrate/20160223033929_create_rsvps.rb	/^  def change$/;"	f	class:CreateRsvps
+change	db/migrate/20160224175728_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20160412211108_remove_guest_from_rsvps.rb	/^  def change$/;"	f	class:RemoveGuestFromRsvps
+change	db/migrate/20160412211522_add_guest_id_to_rsvps.rb	/^  def change$/;"	f	class:AddGuestIdToRsvps
+change	db/migrate/20160412211839_add_names_to_rsvp.rb	/^  def change$/;"	f	class:AddNamesToRsvp
+change	db/migrate/20160412221537_create_guests.rb	/^  def change$/;"	f	class:CreateGuests
+change	db/migrate/20160413001415_create_invitations.rb	/^  def change$/;"	f	class:CreateInvitations
+change	db/migrate/20160413001906_create_groups.rb	/^  def change$/;"	f	class:CreateGroups
+change	db/migrate/20160413004909_create_grouped_guests.rb	/^  def change$/;"	f	class:CreateGroupedGuests
+change	db/migrate/20160413012355_add_has_plusone_to_guests.rb	/^  def change$/;"	f	class:AddHasPlusoneToGuests
+change	db/migrate/20160413025032_add_rsvp_to_guest.rb	/^  def change$/;"	f	class:AddRsvpToGuest
+comment_preveiw	app/models/rsvp.rb	/^  def comment_preveiw$/;"	f	class:Rsvp
+confirm	app/mailers/rsvp_mailer.rb	/^  def confirm(rsvp)$/;"	f	class:RsvpMailer
+confirm	test/mailers/previews/rsvp_mailer_preview.rb	/^  def confirm$/;"	f	class:RsvpMailerPreview
+create	app/controllers/groups_controller.rb	/^  def create$/;"	f	class:GroupsController
+create	app/controllers/guests_controller.rb	/^  def create$/;"	f	class:GuestsController
+create	app/controllers/invitations_controller.rb	/^  def create$/;"	f	class:InvitationsController
+create	app/controllers/rsvps_controller.rb	/^  def create$/;"	f	class:RsvpsController
+destroy	app/controllers/groups_controller.rb	/^  def destroy$/;"	f	class:GroupsController
+destroy	app/controllers/guests_controller.rb	/^  def destroy$/;"	f	class:GuestsController
+destroy	app/controllers/invitations_controller.rb	/^  def destroy$/;"	f	class:InvitationsController
+destroy	app/controllers/rsvps_controller.rb	/^  def destroy$/;"	f	class:RsvpsController
+edit	app/controllers/groups_controller.rb	/^  def edit$/;"	f	class:GroupsController
+edit	app/controllers/guests_controller.rb	/^  def edit$/;"	f	class:GuestsController
+edit	app/controllers/invitations_controller.rb	/^  def edit$/;"	f	class:InvitationsController
+edit	app/controllers/rsvps_controller.rb	/^  def edit$/;"	f	class:RsvpsController
+full_name	app/models/guest.rb	/^  def full_name$/;"	f	class:Guest
+group_params	app/controllers/groups_controller.rb	/^    def group_params$/;"	f	class:GroupsController
+guest_params	app/controllers/guests_controller.rb	/^    def guest_params$/;"	f	class:GuestsController
+index	app/controllers/groups_controller.rb	/^  def index$/;"	f	class:GroupsController
+index	app/controllers/guests_controller.rb	/^  def index$/;"	f	class:GuestsController
+index	app/controllers/invitations_controller.rb	/^  def index$/;"	f	class:InvitationsController
+index	app/controllers/rsvps_controller.rb	/^  def index$/;"	f	class:RsvpsController
+invitation_params	app/controllers/invitations_controller.rb	/^    def invitation_params$/;"	f	class:InvitationsController
+invite	app/mailers/invitation_mailer.rb	/^  def invite(guest)$/;"	f	class:InvitationMailer
+invite	test/mailers/previews/invitation_mailer_preview.rb	/^  def invite$/;"	f	class:InvitationMailerPreview
+invite_all	app/models/invitation.rb	/^  def self.invite_all(guests)$/;"	F	class:Invitation
+invite_with_plusone	app/mailers/invitation_mailer.rb	/^  def invite_with_plusone(guest)$/;"	f	class:InvitationMailer
+mark_guest	app/models/rsvp.rb	/^  def mark_guest$/;"	f	class:Rsvp
+new	app/controllers/groups_controller.rb	/^  def new$/;"	f	class:GroupsController
+new	app/controllers/guests_controller.rb	/^  def new$/;"	f	class:GuestsController
+new	app/controllers/invitations_controller.rb	/^  def new$/;"	f	class:InvitationsController
+new	app/controllers/rsvps_controller.rb	/^  def new$/;"	f	class:RsvpsController
+rsvp_params	app/controllers/rsvps_controller.rb	/^    def rsvp_params$/;"	f	class:RsvpsController
+search	app/models/rsvp.rb	/^  def self.search(search)$/;"	F	class:Rsvp
+send_all	app/controllers/invitations_controller.rb	/^  def send_all$/;"	f	class:InvitationsController
+set_group	app/controllers/groups_controller.rb	/^    def set_group$/;"	f	class:GroupsController
+set_guest	app/controllers/guests_controller.rb	/^    def set_guest$/;"	f	class:GuestsController
+set_invitation	app/controllers/invitations_controller.rb	/^    def set_invitation$/;"	f	class:InvitationsController
+set_rsvp	app/controllers/rsvps_controller.rb	/^    def set_rsvp$/;"	f	class:RsvpsController
+show	app/controllers/groups_controller.rb	/^  def show$/;"	f	class:GroupsController
+show	app/controllers/guests_controller.rb	/^  def show$/;"	f	class:GuestsController
+show	app/controllers/invitations_controller.rb	/^  def show$/;"	f	class:InvitationsController
+show	app/controllers/rsvps_controller.rb	/^  def show$/;"	f	class:RsvpsController
+update	app/controllers/groups_controller.rb	/^  def update$/;"	f	class:GroupsController
+update	app/controllers/guests_controller.rb	/^  def update$/;"	f	class:GuestsController
+update	app/controllers/invitations_controller.rb	/^  def update$/;"	f	class:InvitationsController
+update	app/controllers/rsvps_controller.rb	/^  def update$/;"	f	class:RsvpsController
+welcome	app/controllers/pages_controller.rb	/^  def welcome$/;"	f	class:PagesController
