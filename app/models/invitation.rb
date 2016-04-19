@@ -6,7 +6,7 @@ class Invitation < ActiveRecord::Base
     guests_without_plusone = guests.where(has_plus_one: false)
    
     InvitationMailer.invite_single(guests_without_plusone).deliver_now
-    InvitationMailer.invite_single(guests_with_plusone).deliver_now
+    InvitationMailer.invite_with_plusone(guests_with_plusone).deliver_now
   end
 
 
