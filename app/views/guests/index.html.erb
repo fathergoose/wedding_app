@@ -3,7 +3,7 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Guest
   <% end %>
-  <%= button_to "Send Invitations", {controller: 'invitations', action: 'send_all' } %>
+  <%= button_to "Send Invitations", {controller: 'invitations', action: 'send_all'}, data: {confirm: 'This will email all of your guests on this list. Are you sure? ONLY DO THIS ONCE'} %>
   <h1>Listing guests</h1>
 </div>
 
