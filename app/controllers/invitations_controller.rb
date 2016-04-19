@@ -4,6 +4,7 @@ class InvitationsController < ApplicationController
   def send_all
     @guests = Guest.all
     Invitation.invite_all(@guests)
+    redirect_to '/guests'
   end
 
 
